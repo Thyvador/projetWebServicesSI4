@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelibsIntermediary", "VelibsIntermediary\VelibsIntermediary.csproj", "{96220999-9157-44F3-B788-473DEC660912}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96220999-9157-44F3-B788-473DEC660912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96220999-9157-44F3-B788-473DEC660912}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96220999-9157-44F3-B788-473DEC660912}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96220999-9157-44F3-B788-473DEC660912}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {062FC3A9-5783-477D-98F4-9462B732EA67}
+	EndGlobalSection
+EndGlobal
