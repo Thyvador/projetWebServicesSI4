@@ -14,7 +14,7 @@ namespace VelibsIntermediary
     //https://api.jcdecaux.com/vls/v1/stations?contract=<ville>&apiKey=b941e47bb9524c3678fdc55de1788804bbcb004e
 
     [ServiceContract]
-    public interface IService1
+    public interface IVelibsService
     {
         /// <summary>
         /// Return all the contracts (cities) available in the API.
