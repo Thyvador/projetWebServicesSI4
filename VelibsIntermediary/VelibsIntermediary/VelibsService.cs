@@ -57,9 +57,19 @@ namespace VelibsIntermediary
             return contractList;
         }
 
-        public string GetStation(string station)
+        public CompositeStation GetStation(string city, int station)
         {
-            throw new NotImplementedException();
+            WebRequest request = WebRequest.Create(
+               "https://api.jcdecaux.com/vls/v1/stations/" + station + "?contract=" + city +  "&apiKey=b941e47bb9524c3678fdc55de1788804bbcb004e");
+
+            WebResponse response = request.GetResponse();
+            Stream dataStream = response.GetResponseStream();
+            StreamReader reader = new StreamReader(dataStream);
+            string responseFromServer = reader.ReadToEnd();
+            reader.Close();
+            response.Close();
+
+            return  JsonConvert.DeserializeObject<CompositeStation>(responseFromServer);
         }
     }
 

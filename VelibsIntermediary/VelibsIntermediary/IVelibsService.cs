@@ -37,7 +37,7 @@ namespace VelibsIntermediary
         /// <param name="station"></param>
         /// <returns></returns>
         [OperationContract]
-        string GetStation(string station); 
+        CompositeStation GetStation(string city, int station); 
 
 
     }
