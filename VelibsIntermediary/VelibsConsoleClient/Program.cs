@@ -15,26 +15,24 @@ namespace VelibsConsoleClient
         {
             service = new ServiceReference1.VelibsServiceClient();
             string command = "";
+            Console.WriteLine("velibs");
             while (command != "quit" || command != "q")
             {
-                Console.WriteLine("velibs\n>");
+                Console.WriteLine(": ");
                 command = Console.ReadLine();
 
-                switch (command)
+                switch (command.ToLower())
                 {
                     case "help":
                     case "h":
                         Help();
                         break;
-                    case "ListCities":
                     case "listcities":
                         ListCities();
                         break;
-                    case "ListStations":
                     case "liststations":
                         ListStations();
                         break;
-                    case "StationDetails":
                     case "stationdetails":
                         GetStationDetails();
                         break;
