@@ -79,9 +79,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\VelibsIntermediary\VelibsIntermediary.csproj">
+    <ProjectReference Include="..\VelibsIntermediary\VelibsServer.csproj">
       <Project>{96220999-9157-44f3-b788-473dec660912}</Project>
-      <Name>VelibsIntermediary</Name>
+      <Name>VelibsServer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cb495dd0-d8a3-4fad-8a08-bf10eb95eaf4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/VelibsIntermediary/Velibs/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="5b67af9d-2aec-46b6-b153-2cc181a2353a" SourceId="1" SourceUrl="http://localhost:8733/VelibsIntermediary/Velibs/?xsd=xsd0" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="291a9649-170f-47f1-aeb3-09ac4b2d857d" SourceId="1" SourceUrl="http://localhost:8733/VelibsIntermediary/Velibs/?xsd=xsd1" />
+    <MetadataFile FileName="VelibsService.wsdl" MetadataType="Wsdl" ID="e04a4fdd-b834-4772-aca8-719249523ee5" SourceId="1" SourceUrl="http://localhost:8733/VelibsIntermediary/Velibs/?wsdl" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="4a8d837b-8754-4f2a-815b-e0d12c81d5a5" SourceId="1" SourceUrl="http://localhost:8733/VelibsIntermediary/Velibs/?xsd=xsd3" />
+    <MetadataFile FileName="item3.xsd" MetadataType="Schema" ID="8a5c5890-9b7a-4c6a-b758-dda52d66162a" SourceId="1" SourceUrl="http://localhost:8733/VelibsIntermediary/Velibs/?xsd=xsd2" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="65157da3-1b89-4d7c-b942-09a605f64874" SourceId="1" SourceUrl="http://localhost:8733/VelibsIntermediary/Velibs/?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

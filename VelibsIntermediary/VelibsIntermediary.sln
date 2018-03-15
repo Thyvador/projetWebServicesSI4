@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelibsIntermediary", "VelibsIntermediary\VelibsIntermediary.csproj", "{96220999-9157-44F3-B788-473DEC660912}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelibsServer", "VelibsIntermediary\VelibsServer.csproj", "{96220999-9157-44F3-B788-473DEC660912}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelibsClient", "VelibsClient\VelibsClient.csproj", "{EBEB119D-96B5-4A56-BBA3-225781553AE4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelibsGUIClient", "VelibsClient\VelibsGUIClient.csproj", "{EBEB119D-96B5-4A56-BBA3-225781553AE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VelibsConsoleClient", "VelibsConsoleClient\VelibsConsoleClient.csproj", "{1DDF1813-86D8-4131-9CF0-400D661504EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{EBEB119D-96B5-4A56-BBA3-225781553AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBEB119D-96B5-4A56-BBA3-225781553AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBEB119D-96B5-4A56-BBA3-225781553AE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DDF1813-86D8-4131-9CF0-400D661504EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DDF1813-86D8-4131-9CF0-400D661504EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DDF1813-86D8-4131-9CF0-400D661504EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DDF1813-86D8-4131-9CF0-400D661504EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
