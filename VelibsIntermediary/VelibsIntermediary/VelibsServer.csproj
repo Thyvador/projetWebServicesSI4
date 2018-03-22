@@ -47,9 +47,12 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataCacheAsync.cs" />
     <Compile Include="DataCache.cs" />
+    <Content Include="IVelibsService - Copier.txt" />
     <Compile Include="IVelibsService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="VelibsService - Copier.txt" />
     <Compile Include="VelibsService.cs" />
   </ItemGroup>
   <ItemGroup>

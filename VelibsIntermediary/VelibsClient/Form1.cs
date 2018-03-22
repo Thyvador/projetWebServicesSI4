@@ -24,10 +24,15 @@ namespace VelibsClient
 
 
             client = new VelibsService();
+            LoadContracts();
+        }
+
+        private async void LoadContracts()
+        {
             ListViewItem contracts = new ListViewItem();
 
-
-            foreach (var contract in client.GetContracts())
+            List<CompositeContract> compositeContracts = await client.GetContractsAsync();
+            foreach (var contract in compositeContracts)
             {
                 ContractsView.Items.Add(contract.Name);
             }
@@ -48,7 +53,13 @@ namespace VelibsClient
 
             currentContract = ContractsView.Items[index].Text;
             ContractList.Items.Clear();
-            foreach (var contract in client.GetContract(currentContract))
+            LoadSations();
+
+        }
+
+        private async void LoadSations()
+        {
+            foreach (var contract in await client.GetContractAsync(currentContract))
             {
                 string name;
                 if (contract.Name.Contains("-"))
@@ -63,7 +74,6 @@ namespace VelibsClient
                 ContractList.Items.Add(
                     new ListViewItem(new[] { name, contract.Address }));
             }
-
         }
 
 
@@ -74,7 +84,12 @@ namespace VelibsClient
                 return;
             }
             int index = ContractList.SelectedIndices[0];
-            var station = client.GetStation(currentContract, stations[index].Number);
+            LoadStationsDetails(index);
+        }
+
+        private async void LoadStationsDetails(int index)
+        {
+            var station = await client.GetStationAsync(currentContract, stations[index].Number);
             BikesTextBox.Text = station.Available_Bikes.ToString();
             BikeStansTextBox.Text = station.Available_Bike_Stands.ToString();
             NameTextBox.Text = station.Name;

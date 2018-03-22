@@ -18,7 +18,7 @@ namespace VelibsConsoleClient
             Console.WriteLine("velibs");
             while (command != "quit" || command != "q")
             {
-                Console.WriteLine(": ");
+                Console.WriteLine("> ");
                 command = Console.ReadLine();
 
                 switch (command.ToLower())
@@ -47,13 +47,13 @@ namespace VelibsConsoleClient
 
         }
 
-        private static void GetStationDetails()
+        private async static void GetStationDetails()
         {
             Console.WriteLine("City name : ");
             string city = Console.ReadLine();
             Console.WriteLine("Station number: ");
             int number = Console.Read();
-            var station = service.GetStation(city, number);
+            var station = await service.GetStationAsync(city, number);
 
             Console.WriteLine("Station: " + station.Name);
             Console.WriteLine("Adress: " + station.Address);
@@ -61,20 +61,21 @@ namespace VelibsConsoleClient
             Console.WriteLine("Available Bike Stands: " + station.Available_Bike_Stands);
         }
 
-        private static void ListStations()
+        private async static void ListStations()
         {
             Console.WriteLine("City name : ");
-            CompositeStation[] stations = service.GetContract(Console.ReadLine());
+            CompositeStation[] stations = await service.GetContractAsync(Console.ReadLine());
             foreach(CompositeStation station in stations)
             {
                 Console.WriteLine("Station: " + station.Name);
                 Console.WriteLine("Adress: " + station.Address);
+                Console.WriteLine("Station Number: " + station.Number);
             }    
         }
 
-        private static void ListCities()
+        private async static void ListCities()
         {
-            CompositeContract[] contracts = service.GetContracts();
+            CompositeContract[] contracts = await service.GetContractsAsync();
             foreach (CompositeContract contract in contracts)
             {
                 Console.WriteLine(contract.Name);
