@@ -17,3 +17,12 @@ The implemented extentions   :
  - Graphical User Interface for the client 
  - Replace all the accesses to WS (beetween Velib WS and IWS, between IWS and WS Clients) with asynchronous ones. Some indications can be find just below.
  - Add a cache in IWS, to reduce communications between Velib WS and IWS
+
+
+## Run project
+Open the solution in Visual Studio and run any client. Visual Studio should start the server and you can test the project from there.
+
+This project contains 2 clients :
+ - A [CLI client](./VelibsConsoleClient/)
+ - A [GUI client](./VelibsClient/)
+
