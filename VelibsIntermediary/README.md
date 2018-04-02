@@ -20,7 +20,10 @@ The implemented extentions   :
 
 
 ## Run project
-Open the solution in Visual Studio and run any client. Visual Studio should start the server and you can test the project from there.
+Run Visual Studio as Admin.
+Open the solution (`VelibsIntermediary.sln`) in Visual Studio.
+Run any client using the debug. 
+Visual Studio should start the server and you can test the project from there.
 
 This project contains 2 clients :
  - A [CLI client](./VelibsConsoleClient/)
